@@ -1,0 +1,21 @@
+{
+    "timeout": 100,
+    "load": {
+      "before": [
+        "responseTime",
+        "logger",
+        "cors",
+        "responses",
+        "gzip"
+      ],
+      "order": [
+        "middlewares",
+        "serve-react"
+      ],
+      "after": [
+        "parser",
+        "router",
+        "serve-react"
+      ]
+    }
+  }
